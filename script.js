@@ -1,6 +1,6 @@
 document
 .getElementById("aspirasiForm")
-.addEventListener("submit", function(e){
+.addEventListener("submit", async function(e){
 
     e.preventDefault();
 
@@ -10,8 +10,28 @@ document
         pesan: document.querySelector("[name='pesan']").value
     };
 
-    console.log(data);
+    try {
 
-    alert("Data berhasil dikumpulkan!");
+        const response = await fetch(
+            "URL_WEB_APP_KAMU_DISINI",
+            {
+                method: "POST",
+                body: JSON.stringify(data)
+            }
+        );
+
+        alert("✅ Aspirasi berhasil dikirim!");
+
+        document
+        .getElementById("aspirasiForm")
+        .reset();
+
+    } catch(error){
+
+        alert("❌ Gagal mengirim data");
+
+        console.error(error);
+
+    }
 
 });
