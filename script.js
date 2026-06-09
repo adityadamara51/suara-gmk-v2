@@ -13,7 +13,7 @@ document
     try {
 
         const response = await fetch(
-            "URL_WEB_APP_KAMU_DISINI",
+            "https://script.google.com/macros/s/AKfycbz10zMFSJ1466ycVb9gx6DHDZ0wCDu6Sg2ajGiXRdX7MspM8dKLEtAABAuZiM_DXAg4aw/exec",
             {
                 method: "POST",
                 body: JSON.stringify(data)
