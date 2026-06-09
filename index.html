@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUARA GMK</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="assets/logo-gmk.png" class="logo">
+
+    <h1>SUARA GMK</h1>
+
+    <p class="subjudul">
+        Sarana Kritik dan Saran Generasi Muda Karanganom
+    </p>
+
+    <form id="aspirasiForm">
+
+        <label>
+            1. Apakah kinerja kepengurusan GMK sudah memuaskan?
+        </label>
+
+        <select name="q1" required>
+            <option value="">Pilih Jawaban</option>
+            <option>Ya</option>
+            <option>Tidak</option>
+        </select>
+
+        <label>
+            2. Apakah Anda puas dengan kinerja Ketua dan Wakil Ketua?
+        </label>
+
+        <select name="q2" required>
+            <option value="">Pilih Jawaban</option>
+            <option>Ya</option>
+            <option>Tidak</option>
+        </select>
+
+        <h2>📝 Kritik & Saran</h2>
+
+        <textarea
+            name="pesan"
+            placeholder="Tuliskan kritik dan saran Anda..."
+            required>
+        </textarea>
+
+        <button type="submit">
+            🚀 KIRIM ASPIRASI
+        </button>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
